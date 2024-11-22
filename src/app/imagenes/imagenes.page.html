@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Books & Dogs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-thumbnail slot="start">
+        <img [src]="item.image" alt="Dog Image" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ item.title }}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
